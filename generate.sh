@@ -23,6 +23,7 @@ if [ $# -eq 0 ]; then
 
 	echo "done; results saved in /$$/"
 
+# if an argument is used
 elif [ $# -eq 1 ]; then
 		echo "running benchmark..."
 	for i in $(seq 100000 100000 12500000)
@@ -38,6 +39,7 @@ elif [ $# -eq 1 ]; then
 
 	echo "done; results saved in /$$/"
 
+# otherwise,
 else
 	echo "Usage: ./generate.sh <optional-threads>"
 	exit 1
