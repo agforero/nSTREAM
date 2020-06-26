@@ -5,7 +5,12 @@ Commands include:
 * `./reset.sh`: removes everything in the `/runs/` directory.
 
 Some things to know:
+* `nstream.F90` will use increasingly large memory footprints to benchmark. By default, it runs 125 times, starting at n = 100000 and ending at n = 12500000, where 100000n ≈ 2.272MB. Ideally, this is used to come into contact with all available caches before deferring to RAM. 
+* If you like, you can edit the `begin`, `step` and `fin` values for the benchmark at the top of `generate.sh`.
+* It's difficult for `stream`, either the version contained herein or from the original repo, to gauge L1 cache performance.
+* It's best to use as many threads as possible. Use something like `$(htop)`, `$(lscpu)` or `$(lstopo)` to gauge how many threads you can use.
 * `./generate.sh` will save the results in a folder named from the PID; you can find these results in `/runs/`.
-* The construction of the graph utilizes `matplotlib`, which must therefore be loaded onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the `-n` flag.
+* The construction of the graph utilizes `matplotlib`, which must therefore be installed onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the `-n` flag.
+* This repo could, hypothetically, be used to test a normal machine.
 
 Originally written for Argonne National Laboratory.
