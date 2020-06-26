@@ -1,4 +1,4 @@
-A fork of [STREAM](https://github.com/jeffhammond/STREAM) meant to benchmark supercomputers. Utilizes [OpenMP](https://www.openmp.org/) to get the most out of your HPC system.
+A fork of [STREAM](https://github.com/jeffhammond/STREAM) meant to benchmark and graph the memory bandwidth of a supercomputer. Utilizes [OpenMP](https://www.openmp.org/) to get the most out of your HPC system.
 
 Commands include:
 * `./generate.sh (-n) (optional-threads)`: run the benchmark. Assumes number of threads to use from return of `$(nproc)`; otherwise, you can specify a custom amount of threads. You can use the `-n` flag to disable graphing.
