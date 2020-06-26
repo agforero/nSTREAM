@@ -6,6 +6,6 @@ Commands include:
 
 Some things to know:
 * `./generate.sh` will save the results in a folder named from the PID; you can find these results in `/runs/`.
-* The construction of the graph utilizes `matplotlib`, which must therefore be loaded onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the -n flag.
+* The construction of the graph utilizes `matplotlib`, which must therefore be loaded onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the `-n` flag.
 
 Originally written for Argonne National Laboratory.
