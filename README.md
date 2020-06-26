@@ -5,6 +5,7 @@ Commands include:
 * `./reset.sh`: removes everything in the `/runs/` directory.
 
 Some things to know:
+* It's best to use as many threads as possible. Use something like `$(htop)`, `$(lscpu)` or `$(lstopo)` to gauge how many threads you can use.
 * `./generate.sh` will save the results in a folder named from the PID; you can find these results in `/runs/`.
 * The construction of the graph utilizes `matplotlib`, which must therefore be loaded onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the `-n` flag.
 
