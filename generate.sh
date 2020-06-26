@@ -56,6 +56,11 @@ elif [ $# -eq 1 ]; then
 
 # -n and custom threads
 elif [ $# -eq 2 ]; then
+	if [ $2 == "-n" ]; then
+		echo "Invalid arguments."
+		exit 2
+	fi
+
 	echo "running benchmark..."
 	for i in $(seq 100000 100000 12500000) 
 	do
