@@ -12,4 +12,4 @@ nstream.exe: nstream.F90 mysecond.o
 	$(FC) $(FFLAGS) nstream.o mysecond.o -o nstream.exe
 
 clean:
-	rm -f nstream.exe *.o
+	rm -f nstream.exe *.o *.mod
