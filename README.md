@@ -13,4 +13,7 @@ Some things to know:
 * The construction of the graph utilizes `matplotlib`, which must therefore be installed onto your environment. This can be done with tools like [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Alternatively, you can forgo graphing entirely with the `-n` flag.
 * This repo could, hypothetically, be used to test a normal machine.
 
+Sample output of `./generate.sh`:
+![Sample Image](https://raw.githubusercontent.com/agforero/nSTREAM/master/sample.png)
+
 Originally written for Argonne National Laboratory.
