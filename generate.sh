@@ -23,12 +23,8 @@ if [ $# -eq 0 ]; then
 		../../nstream.exe $i $threads >> output.txt
 	done
 	echo "benchmark complete."
-
 	echo "drawing graph..."
-	cp ../../ograph.py .
-	./ograph.py 
-	rm ograph.py
-
+	../../ograph.py 
 	echo "done; results saved in /$$/"
 
 # if an argument is used
@@ -52,13 +48,9 @@ elif [ $# -eq 1 ]; then
 			../../nstream.exe $i $1 >> output.txt
 		done
 		echo "benchmark complete."
-
 		echo "drawing graph..."
-		cp ../../ograph.py .
-		./ograph.py 
-		rm ograph.py
+		../../ograph.py
 		echo "done; results saved in /$$/"
-
 	fi
 
 # -n and custom threads
@@ -67,7 +59,6 @@ elif [ $# -eq 2 ]; then
 		echo "Invalid arguments."
 		exit 2
 	fi
-
 	echo "running benchmark..."
 	for i in $(seq $begin $step $fin)
 	do
