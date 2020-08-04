@@ -1,3 +1,6 @@
+# nSTREAM
+### Written by Agustin Forero for Argonne National Laboratory.
+
 A fork of [STREAM](https://github.com/jeffhammond/STREAM) meant to benchmark and graph the memory bandwidth of a supercomputer. Utilizes [OpenMP](https://www.openmp.org/) to get the most out of your HPC system.
 
 Commands include:
@@ -15,5 +18,3 @@ Some things to know:
 
 Sample output of `./generate.sh`:
 ![Sample Image](https://raw.githubusercontent.com/agforero/nSTREAM/master/sample.png)
-
-Originally written for Argonne National Laboratory.
